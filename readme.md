@@ -1,116 +1,76 @@
-#  Docker Repository
- 
-This repository serves as a simple guide to Docker, containing essential commands, tools, and popular container images that I use frequently.
+# Docker Repository
+
+This repository serves as a simple guide to Docker, containing essential commands, tools, and popular container images.
 
 ## Docker: An Overview
 
 ### What is Docker?
-
 Docker is an essential tool in modern software development, enabling the creation, deployment, and management of applications within containers. Containers package an application and its dependencies into a standardized unit for seamless deployment across different environments.
 
 ## Essential Docker Commands
 
-### Pull
+- **Pull**: `docker pull <image>`
+  - Downloads an image from Docker Hub to your local machine.
 
-```bash
-docker pull <image>
-```
+- **Run**: `docker run <image>`
+  - Creates and runs a container from an image.
 
-Downloads an image from Docker Hub to your local machine.
+- **PS**: `docker ps`
+  - Lists all running containers.
 
-### Run
+- **Stop**: `docker stop <container ID>`
+  - Stops a running container.
 
-```bash
-docker run <image>
-```
+- **RM**: `docker rm <container ID>`
+  - Removes a container.
 
-Creates and runs a container from an image.
+- **Images**: `docker images`
+  - Lists all available images locally.
 
-### PS
+- **RMI**: `docker rmi <image ID>`
+  - Removes a local image.
 
-```bash
-docker ps
-```
+- **Inspect**: `docker inspect <container ID>`
+  - Displays detailed information about a container.
 
-Lists all running containers.
+- **Logs**: `docker logs <container ID>`
+  - Displays the logs of a container.
 
-### Stop
-
-```bash
-docker stop <container ID>
-```
-
-Stops a running container.
-
-### RM
-
-```bash
-docker rm <container ID>
-```
-
-Removes a container.
-
-### Images
-
-```bash
-docker images
-```
-
-Lists all available images locally.
-
-### RMI
-
-```bash
-docker rmi <image ID>
-```
-
-Removes a local image.
+- **Exec**: `docker exec -it <container ID> <command>`
+  - Executes a command inside a running container.
 
 ## Docker Tools
 
-### Docker Compose
+- **Docker Compose**: 
+  - Simplifies the process of defining and running multi-container Docker applications with a single YAML configuration file.
 
-Docker Compose simplifies the process of defining and running multi-container Docker applications with a single YAML configuration file.
+- **Docker Swarm**: 
+  - A native Docker orchestration tool for deploying and managing container clusters.
 
-### Docker Swarm
-
-Docker Swarm is a native Docker orchestration tool for deploying and managing container clusters.
-
-### Kubernetes
-
-Kubernetes is an open-source platform for automating the deployment, scaling, and operation of containerized applications.
+- **Kubernetes**: 
+  - An open-source platform for automating the deployment, scaling, and operation of containerized applications.
 
 ## Popular Docker Hub Images
 
-### NGINX
+- **NGINX**
+  - A high-performance web server and reverse proxy.
+  - Image: `nginx`
 
-NGINX is a high-performance web server and reverse proxy.
+- **MySQL**
+  - An open-source relational database management system.
+  - Image: `mysql`
 
-- **Image**: `nginx`
+- **PostgreSQL**
+  - An open-source relational database management system.
+  - Image: `postgres`
 
-### MySQL
+- **MongoDB**
+  - A NoSQL document-oriented database.
+  - Image: `mongo`
 
-MySQL is an open-source relational database management system.
-
-- **Image**: `mysql`
-
-### PostgreSQL
-
-PostgreSQL is an open-source relational database management system.
-
-- **Image**: `postgres`
-
-### MongoDB
-
-MongoDB is a NoSQL document-oriented database.
-
-- **Image**: `mongo`
-
-### Redis
-
-Redis is an in-memory data structure store used as a database, cache, and message broker.
-
-- **Image**: `redis`
+- **Redis**
+  - An in-memory data structure store used as a database, cache, and message broker.
+  - Image: `redis`
 
 ## Example Usage
 
